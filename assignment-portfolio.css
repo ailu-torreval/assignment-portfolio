@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Limelight&family=Roboto&family=Rowdies&display=swap");
+
+:root {
+  --purple: rgba(217, 171, 255, 1);
+  --blue: rgba(171, 228, 255, 1);
+  --green: rgba(221, 255, 171, 1);
+  --orange: rgba(255, 218, 160, 1);
+  --coral: rgba(255, 171, 171, 1);
+  --light: rgb(252, 250, 245);
+  --dark: rgb(48, 48, 48);
+  --display-font: "Fascinate Inline", cursive;
+}
+
+/* global styling */
+
+* {
+  background-color: var(--light);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+section {
+  height: 100vh;
+  margin-bottom: 25vh;
+}
+
+.hidden {
+  display: none;
+}
+
+.nav-bar {
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  align-items: center;
+  width: 95%;
+  z-index: 10;
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-bar ul li {
+  padding: 0.8rem;
+  border: 2px solid var(--dark);
+  border-radius: 5px;
+  box-shadow: 5px 7px black;
+  background-color: var(--offwhite);
+}
+
+/* header section */
+
+header {
+  height: 86vh;
+  padding-top: 18vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 3rem;
+  margin-bottom: 25vh;
+}
+
+.hero-sect {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.hero-sect h3 {
+  margin-bottom: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0rem;
+}
+
+.hero-sect h1 {
+  font-family: var(--display-font);
+  margin-top: 0;
+  font-size: 6rem;
+  line-height: 5.9rem;
+  /* -webkit-text-fill-color: white; */
+  -webkit-text-stroke: 3px var(--dark);
+  background: -webkit-linear-gradient(
+    131deg,
+    var(--purple) 50%,
+    var(--blue) 60%,
+    var(--green) 70%,
+    var(--orange) 75%,
+    var(--coral) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+h2 {
+  margin-top: 0.9rem;
+  line-height: 1rem;
+  font-style: italic;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 0rem;
+}
+
+.down-arrow {
+  margin-top: 1rem;
+  align-self: center;
+  justify-self: center;
+  -webkit-text-fill-color: var(--light);
+  -webkit-text-stroke: 3px var(--dark);
+  text-shadow: 4px 4px var(--dark);
+  font-size: 5rem;
+}
+
+/* intro section */
+#intro-sect {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* height: 80vh; */
+}
+
+#intro-txt {
+  border: 2px solid var(--dark);
+  border-radius: 5px;
+  box-shadow: 5px 7px black;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  grid-column: 2/4;
+  grid-row: 1/2;
+  padding: 2rem;
+  height: max-content;
+  font-size: 1.2rem;
+  align-self: center;
+}
+
+#intro-pic {
+  background-image: url("/assets/mirrorball.png");
+  height: 80%;
+  width: 100%;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  align-self: center;
+}
+
+/* assignments grid section */
+
+#assignments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
+  gap: 3rem;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+#ass1,
+#ass4 {
+  background-image: url("/assets/fonts-ui.png");
+  /* filter: brightness(1.3) invert(0.17) saturate(2.6) sepia(0.25) url('#squiggly-1'); */
+  /* background-size: 100%; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 37vh;
+  width: 40vw;
+  border: 3px solid var(--dark);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 5px 7px var(--dark);
+  /* border: 3px solid var(--dark); */
+}
+
+#ass2,
+#ass3 {
+  background-image: url("/assets/colors-animations.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 37vh;
+  width: 40vw;
+  border: 3px solid var(--dark);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 5px 7px var(--dark);
+}
+
+#assignments-sect h2 {
+  margin-left: 6%;
+  margin-bottom: 1rem;
+}
+
+/* conclussion section */
+
+#concl-sect {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: auto;
+  /* height: 80vh; */
+}
+
+#concl-pic {
+  background-image: url("/assets/mirrorball.png");
+  height: 80%;
+  width: 100%;
+  grid-column: 2/4;
+  grid-row: 1/2;
+  align-self: center;
+}
+
+#concl-txt {
+  border: 2px solid var(--dark);
+  border-radius: 5px;
+  box-shadow: -5px 7px black;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  padding: 2rem;
+  height: max-content;
+  font-size: 1.2rem;
+  align-self: center;
+}
+
+/* Assignments pages */
+
+.assignment-btn {
+  padding: 0.8rem;
+  border: 2px solid var(--dark);
+  border-radius: 5px;
+  box-shadow: 5px 7px black;
+  background-color: var(--offwhite);
+  font-size: 1.3rem;
+}
+
+/* fonts ui page */
+
+.info-sect {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 10%;
+  margin-right: 10%;
+  row-gap: 0;
+}
+
+.info-sect h2 {
+  margin-bottom: 1rem;
+  line-height: 2.4rem;
+}
+
+#info-txt {
+  grid-column: 1/3;
+}
+
+.fonts div {
+  border: 3px solid var(--dark);
+  border-radius: 5px;
+  box-shadow: 5px 7px black;
+  margin-right: 1rem;
+  padding: 1rem;
+  height: 50%;
+}
+
+#info-txt p {
+  width: 96%;
+  border: 3px solid var(--dark);
+  border-radius: 5px;
+  box-shadow: 5px 7px black;
+  padding: 1rem;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.colors-div {
+  border: 3px solid var(--dark);
+  border-radius: 5px;
+  box-shadow: 5px 7px var(--dark);
+  margin-right: 1rem;
+  height: 56.5%;
+  overflow: hidden;
+  position: relative;
+}
+
+#font1 {
+  font-family: "Limelight", cursive;
+  font-size: 3rem;
+}
+
+.fonts span {
+  font-family: arial;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
+
+#color1 {
+  background-color: #f2f2f2;
+  height: 100%;
+  width: 20%;
+  position: absolute;
+  left: 0;
+}
+
+#color2 {
+  background-color: #bfbfbf;
+  height: 100%;
+  width: 20%;
+  position: absolute;
+  left: 20%;
+}
+#color3 {
+  background-color: #8c8c8c;
+  height: 100%;
+  width: 20%;
+  position: absolute;
+  left: 40%;
+}
+#color4 {
+  background-color: #404040;
+  height: 100%;
+  width: 20%;
+  position: absolute;
+  left: 60%;
+}
+#color5 {
+  background-color: #262626;
+  height: 100%;
+  width: 20%;
+  position: absolute;
+  left: 80%;
+}
+
+.assignment-txt {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 75% 25%;
+  height: 75vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: auto;
+}
+
+.ass-pic {
+  background-image: url("/assets/mirrorball.png");
+  height: 100%;
+  width: 100%;
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.txt {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  border: 3px solid var(--dark);
+  border-radius: 5px;
+  box-shadow: 5px 7px var(--dark);
+  padding: 2rem;
+  font-size: 1.2rem;
+  height: max-content;
+  align-self: center;
+}
+
+.next-btn {
+  grid-column: 3/4;
+  height: max-content;
+  width: max-content;
+  padding: 1rem;
+  border: 3px solid var(--dark);
+  border-radius: 5px;
+  box-shadow: 5px 7px var(--dark);
+  justify-self: right;
+  align-self: center;
+}
