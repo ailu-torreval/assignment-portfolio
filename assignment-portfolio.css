@@ -151,7 +151,7 @@ h2 {
 }
 
 #intro-pic {
-  background-image: url("/assets/mirrorball.png");
+  background-image: url("./assets/mirrorball.png");
   height: 80%;
   width: 100%;
   grid-column: 1/3;
@@ -213,7 +213,7 @@ h2 {
 }
 
 #concl-pic {
-  background-image: url("/assets/mirrorball.png");
+  background-image: url("./assets/mirrorball.png");
   height: 80%;
   width: 100%;
   grid-column: 2/4;
@@ -358,7 +358,7 @@ h2 {
 }
 
 .ass-pic {
-  background-image: url("/assets/mirrorball.png");
+  background-image: url("./assets/mirrorball.png");
   height: 100%;
   width: 100%;
   grid-column: 1/3;
