@@ -11,76 +11,69 @@
 </head>
 
 <body>
-    <nav id="nav-bar">
-        <a href="assignment-portfolio.html" id="nav-header">Ailin Torre Val's Portfolio</a>
-        <ul>
-            <li><a href="#intro-sect">About</a></li>
-            <li><a href="#assignments-sect">Assignments</a></li>
-            <li><a href="#conclussion-sect">Conclussion</a></li>
-        </ul>
-        <span id="burger-icon" class="hidden"><i class="fas fa-bars"></i></span>
-        <span id="close-menu" class="hidden"><i class="fas fa-times"></i></span>
+    <nav class="nav-bar">
+        <a href="assignment-portfolio.html" class="nav-header">Ailin Torre Val's Portfolio</a>
+        <a href="assignment-portfolio.html" class="mob-nav-header">Ailin's Portfolio</a>
+        <div class="nav-menu">
+            <p class="nav-assignments"> Assignments <span><i class="fas fa-caret-right"></i> </p>
+            <ul class="collapsable-menu hidden">
+                <li><a href="./fonts-ui.html">12C.01.01 Fonts and UI cards</a></li>
+                <li><a href="./colors-animations.html">12C.01.02 Colors and animations</a></li>
+                <li><a href="./resp-design.html">12C.02.01 Responsive design</a></li>
+                <li><a href="./frameworks.html">12C.02.02 Designing with frameworks</a></li>
+            </ul>
+        </div>
     </nav>
-    <nav id="burger-menu" class="hidden">
-        <ul>
-            <li><a href="#intro-sect">About</a></li>
-            <li>Assignments <span><i class="fas fa-caret-right"></i>
-                    <ul>
-                        <li><a href="/fonts-ui.html">12C.01.01 Fonts and UI cards</a></li>
-                        <li><a href="/colors-animations.html">12C.01.02 Colors and animations</a></li>
-                        <li><a href="/resp-design.html">12C.02.01 Responsive design</a></li>
-                        <li><a href="/frameworks.html">12C.02.02 Designing with frameworks</a></li>
-                    </ul>
-                </span></li>
-            <li><a href="#coclussion-sect">Conclussion</a></li>
-        </ul>
-    </nav>
-    <header>
+    <header class="ass-header">
         <div class="hero-sect">
             <div class="hero-txt">
                 <h1>RESPONSIVE DESIGN</h1>
                 <h2>ASSIGNMENT</h2>
-                <button class="asignment-btn"><a href="">Check the Solution <span><i
+                <button class="assignment-btn"><a href="">Check the Solution <span><i
                                 class="fas fa-caret-right"></i></span></a></button>
             </div>
             <div class="hero-img">
-                <img src="/assets/font-cards.png" alt="fonts-cards-mockup" width="600">
+                <img src="./assets/responsive-mockup.png" alt="fonts-cards-mockup" width="1000">
             </div>
         </div>
         <div class="down-arrow"><i class="fas fa-caret-down"></i></div>
     </header>
-    <section id="info-sect">
-        <div id="fonts">
+    <section class="info-sect">
+        <div class="fonts">
             <h2>FONTS USED</h2>
             <div>
-                <h3 id="font1">Rowdies</h3>
-                <h3 id="font2">Roboto</h3>
+                <h3 class="font-chewy">Chewy <span>Display Font</span> </h3>
+                <h3 class="font-roboto">Roboto <span>Body Font</span> </h3>
             </div>
         </div>
-        <div id="colors">
+        <div class="colors">
             <h2>COLOR PALETTE</h2>
-            <div>
-                <div id="color1"></div>
-                <div id="color2"></div>
-                <div id="color3"></div>
-                <div id="color4"></div>
-                <div id="color5"></div>
+            <div class="colors-div">
+                <div id="color3a"></div>
+                <div id="color3b"></div>
+                <div id="color3c"></div>
+                <div id="color3d"></div>
             </div>
         </div>
-        <div id="info-txt">
-            <p>ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel risus commodo viverra maecenas
-                accumsan lacus vel facilisis volutpat est velit egestas dui id ornare arcu odio ut sem nulla pharetra
-                diam</p>
+        <div class="info-det" id="responsive-details">
+            <img src="./assets/resp-det1.png" alt="responsive web details" height="300">
+            <img id="det-resp" src="./assets/resp-det2.png" alt="responsive web details" height="300">
         </div>
     </section>
     <section class="assignment-txt">
+        <div class="ass-pic"></div>
+
         <p class="txt">
+            blandit massa enim nec dui nunc mattis enim ut tellus elementum sagittis vitae et leo duis ut diam quam
+            nulla porttitor massa id neque aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet
+            nulla malesuada pellentesque elit eget gravida cum sociis natoque penatibus et magnis dis parturient montes
             nascetur ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel risus commodo viverra maecenas
             accumsan lacus vel facilisis volutpat est velit egestas dui id ornare arcu odio ut sem nulla pharetra diam
             sit amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit sed vulputate mi sit amet
         </p>
-        <button class="prev-btn"><a href="/colors-animations.html"><span><i class="fas fa-caret-left"></i></span>PREVIOUS ASSIGNMENT</a></button>
-        <button class="next-btn"><a href="/frameworks.html">NEXT ASSIGNMENT <span><i
+        <button class="prev-btn"><a href="./colors-animations.html"><span><i class="fas fa-caret-left"></i></span>
+                PREVIOUS ASSIGNMENT</a></button>
+        <button class="next-btn"><a href="./frameworks.html">NEXT ASSIGNMENT <span><i
                         class="fas fa-caret-right"></i></span></a></button>
     </section>
     <footer>
@@ -88,4 +81,5 @@
     </footer>
 </body>
 <script src="./assignment-portfolio.js"></script>
+
 </html>

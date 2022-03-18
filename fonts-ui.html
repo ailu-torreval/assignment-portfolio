@@ -13,29 +13,18 @@
 <body>
     <nav class="nav-bar">
         <a href="assignment-portfolio.html" class="nav-header">Ailin Torre Val's Portfolio</a>
-        <ul>
-            <li><a href="#intro-sect">About</a></li>
-            <li><a href="#assignments-sect">Assignments</a></li>
-            <li><a href="#conclussion-sect">Conclussion</a></li>
-        </ul>
-        <span id="burger-icon" class="hidden"><i class="fas fa-bars"></i></span>
-        <span id="close-menu" class="hidden"><i class="fas fa-times"></i></span>
+        <a href="assignment-portfolio.html" class="mob-nav-header">Ailin's Portfolio</a>
+        <div class="nav-menu">
+            <p class="nav-assignments"> Assignments <span><i class="fas fa-caret-right"></i> </p>
+            <ul class="collapsable-menu hidden">
+                <li><a href="./fonts-ui.html">12C.01.01 Fonts and UI cards</a></li>
+                <li><a href="./colors-animations.html">12C.01.02 Colors and animations</a></li>
+                <li><a href="./resp-design.html">12C.02.01 Responsive design</a></li>
+                <li><a href="./frameworks.html">12C.02.02 Designing with frameworks</a></li>
+            </ul>
+        </div>
     </nav>
-    <nav class="burger-menu hidden">
-        <ul>
-            <li><a href="#intro-sect">About</a></li>
-            <li>Assignments <span><i class="fas fa-caret-right"></i>
-                    <ul>
-                        <li><a href="/fonts-ui.html">12C.01.01 Fonts and UI cards</a></li>
-                        <li><a href="/colors-animations.html">12C.01.02 Colors and animations</a></li>
-                        <li><a href="/resp-design.html">12C.02.01 Responsive design</a></li>
-                        <li><a href="/frameworks.html">12C.02.02 Designing with frameworks</a></li>
-                    </ul>
-                </span></li>
-            <li><a href="#coclussion-sect">Conclussion</a></li>
-        </ul>
-    </nav>
-    <header>
+    <header class="ass-header">
         <div class="hero-sect">
             <div class="hero-txt">
                 <h1>FONTS & UI CARDS</h1>
@@ -44,7 +33,7 @@
                                 class="fas fa-caret-right"></i></span></a></button>
             </div>
             <div class="hero-img">
-                <img src="/assets/font-cards.png" alt="fonts-cards-mockup" width="600">
+                <img src="./assets/font-cards.png" alt="fonts-cards-mockup" width="1000">
             </div>
         </div>
         <div class="down-arrow"><i class="fas fa-caret-down"></i></div>
@@ -60,18 +49,16 @@
         <div class="colors">
             <h2>COLOR PALETTE</h2>
             <div class="colors-div">
-                <div id="color1"></div>
-                <div id="color2"></div>
-                <div id="color3"></div>
-                <div id="color4"></div>
-                <div id="color5"></div>
+                <div id="color1a"></div>
+                <div id="color1b"></div>
+                <div id="color1c"></div>
+                <div id="color1d"></div>
+                <div id="color1e"></div>
             </div>
         </div>
-        <div id="info-txt">
-            <h2>MORE INFO</h2>
-            <p>ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel risus commodo viverra maecenas
-                accumsan lacus vel facilisis volutpat est velit egestas dui id ornare arcu odio ut sem nulla pharetra
-                diam</p>
+        <div class="info-det">
+            <img src="./assets/fonts-det1.png" alt="details1" width="500">
+            <img id="det-fonts" src="./assets/fonts-det2.png" alt="details 2" width="500">
         </div>
     </section>
     <section class="assignment-txt">
@@ -84,7 +71,7 @@
             accumsan lacus vel facilisis volutpat est velit egestas dui id ornare arcu odio ut sem nulla pharetra diam
             sit amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit sed vulputate mi sit amet
         </p>
-        <button class="next-btn"><a href="/colors-animations.html">NEXT ASSIGNMENT <span><i
+        <button class="next-btn"><a href="./colors-animations.html">NEXT ASSIGNMENT <span><i
                         class="fas fa-caret-right"></i></span></a></button>
     </section>
     <footer>
