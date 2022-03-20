@@ -125,6 +125,74 @@ header {
   padding-right: 4rem;
 }
 
+.hero-img {
+  background-image: url("./assets/dots.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+  height: 55vh;
+  width: 40vw;
+  position: relative;
+}
+
+#star1 {
+  position: absolute;
+  background: transparent;
+  bottom: 0;
+  left: 18%;
+  animation: big-star 6s 1s linear infinite;
+}
+
+#mini-star1 {
+  position: absolute;
+  background: transparent;
+  top: 0;
+  left: 33%;
+  animation: ministar 1.5s ease-in-out infinite;
+}
+
+#mini-star2 {
+  position: absolute;
+  background: transparent;
+  top: 45%;
+  right: 15%;
+  animation: ministar 1.6s 0.2s ease-in-out infinite;
+}
+
+#mini-star3 {
+  position: absolute;
+  background: transparent;
+  bottom: 0;
+  right: 35%;
+  animation: ministar 2s 0.5s ease-in-out infinite;
+}
+
+@keyframes ministar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes big-star {
+  0% {
+    transform: rotate(-100deg);
+  }
+  50% {
+    transform: rotate(100deg);
+  }
+
+  100% {
+    transform: rotate(-100deg);
+  }
+}
+
 .hero-sect h3 {
   margin-bottom: 0.8rem;
   line-height: 0.8rem;
@@ -152,6 +220,7 @@ header {
   -webkit-text-fill-color: transparent;
   margin-bottom: 0;
   margin-top: 0;
+  width: min-content;
 }
 h2 {
   margin-top: 0.9rem;
@@ -179,7 +248,7 @@ h2 {
 /* intro section */
 #intro-sect {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 10% 80% 10%;
   /* height: 80vh; */
 }
 
@@ -189,21 +258,32 @@ h2 {
   box-shadow: 5px 7px black;
   margin-left: 3rem;
   margin-right: 3rem;
-  grid-column: 2/4;
+  grid-column: 2/3;
   grid-row: 1/2;
   padding: 2rem;
   height: max-content;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   align-self: center;
+  z-index: 1;
 }
 
 #intro-pic {
-  background-image: url("./assets/mirrorball.png");
-  height: 80%;
-  width: 100%;
-  grid-column: 1/3;
-  grid-row: 1/2;
+  background-image: url("./assets/star1.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /* background-color: var(--purple); */
+  height: 1000px;
+  width: 1000px;
   align-self: center;
+  border-radius: 100%;
+  transform: translateX(-20%);
+}
+
+#intro-container {
+  overflow: hidden;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  height: 80%;
 }
 
 /* assignments grid section */
@@ -255,17 +335,17 @@ h2 {
 
 #concl-sect {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 10% 80% 10%;
   margin-bottom: auto;
   /* height: 80vh; */
 }
 
 #concl-pic {
-  background-image: url("./assets/mirrorball.png");
-  height: 80%;
-  width: 100%;
-  grid-column: 2/4;
-  grid-row: 1/2;
+  background-image: url("./assets/star1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200%;
+  height: 100%;
   align-self: center;
 }
 
@@ -279,8 +359,16 @@ h2 {
   grid-row: 1/2;
   padding: 2rem;
   height: max-content;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   align-self: center;
+  z-index: 1;
+}
+
+#concl-container {
+  overflow: hidden;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  height: 80%;
 }
 
 /* Assignments pages */
@@ -643,6 +731,35 @@ h2 {
   }
 
   /* FRONT PAGE */
+  .hero-img {
+    height: 55vh;
+    width: 90vw;
+  }
+
+  #star1 {
+    bottom: 15%;
+    left: 18%;
+    animation: big-star 6s 1s linear infinite;
+  }
+
+  #mini-star1 {
+    top: 15%;
+    left: 33%;
+    animation: ministar 1.5s ease-in-out infinite;
+  }
+
+  #mini-star2 {
+    top: 35%;
+    right: 15%;
+    animation: ministar 1.6s 0.2s ease-in-out infinite;
+  }
+
+  #mini-star3 {
+    bottom: 15%;
+    right: 35%;
+    animation: ministar 2s 0.5s ease-in-out infinite;
+  }
+
   .hero-sect {
     flex-direction: column-reverse;
     margin-top: 0;
