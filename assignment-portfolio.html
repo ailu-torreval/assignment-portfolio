@@ -15,7 +15,10 @@
         <a href="assignment-portfolio.html" class="nav-header">Ailin Torre Val's Portfolio</a>
         <a href="assignment-portfolio.html" class="mob-nav-header">Ailin's Portfolio</a>
         <div class="nav-menu">
-            <p class="nav-assignments"> Assignments <span><i class="fas fa-caret-right"></i> </p>
+            <p class="nav-assignments"> Assignments
+                <span class="arrow-right"><i class="fas fa-caret-right"></i></span>
+                <span class="arrow-down hidden"><i class="fas fa-caret-down"></i></span>
+            </p>
             <ul class="collapsable-menu hidden">
                 <li><a href="./fonts-ui.html">12C.01.01 Fonts and UI cards</a></li>
                 <li><a href="./colors-animations.html">12C.01.02 Colors and animations</a></li>
@@ -31,14 +34,22 @@
                 <h1>MULTIMEDIA DESIGN</h1>
                 <h2>STUDENT</h2>
             </div>
-            <div class="hero-img">
-                <img src="./assets/mirrorball.png" alt="" width="500">
+            <div class="hero-img" id="index-img">
+                <!-- <img src="./assets/dots.svg" alt="" width="400" id="bg-dots"> -->
+                <img src="./assets/star1.svg" alt="" id="star1">
+                <img src="./assets/star.svg" alt="" id="mini-star1">
+                <img src="./assets/star.svg" alt="" id="mini-star2">
+                <img src="./assets/star.svg" alt="" id="mini-star3">
+
+
             </div>
         </div>
         <div class="down-arrow"><i class="fas fa-caret-down"></i></div>
     </header>
     <section id="intro-sect">
-        <div id="intro-pic"></div>
+        <div id="intro-container">
+            <div id="intro-pic"></div>
+        </div>
         <p id="intro-txt">
             During this theme, we have learned design fundamentals from a developer perspective. We learned how the use
             of different fonts and font hierarchy, colors and UI elements change the way the user reads our website. We
@@ -48,32 +59,46 @@
     <section id="assignments-sect">
         <h2>ASSIGNMENTS</h2>
         <div id="assignments-grid">
-            <a href="./fonts-ui.html">
-                <div id="ass1">Fonts and UI Cards</div>
+            <a id="ass1-link" href="./fonts-ui.html">
+                <div id="ass1">
+                    <h3 id="ass1-txt"> Fonts and UI Cards </h3>
+                </div>
             </a>
             <a href="./colors-animations.html">
-                <div id="ass2">Colors and Animations</div>
+                <div id="ass2">
+                    <h3 id="ass2-txt">Colors and Animations</h3>
+                </div>
             </a>
             <a href="./resp-design.html">
-                <div id="ass3">Responsive Design</div>
+                <div id="ass3">
+                    <h3 id="ass3-txt">Responsive Design</h3>
+                </div>
             </a>
             <a href="./frameworks.html">
-                <div id="ass4">Designing with Frameworks</div>
+                <div id="ass4">
+                    <h3 id="ass4-txt">Designing with Frameworks</h3>
+                </div>
             </a>
         </div>
     </section>
     <section id="concl-sect">
-        <div id="concl-pic"></div>
+        <div id="concl-container">
+            <div id="concl-pic"></div>
+        </div>
         <p id="concl-txt">
-            nascetur ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel risus commodo viverra maecenas
-            accumsan lacus vel facilisis volutpat est velit egestas dui id ornare arcu odio ut sem nulla pharetra diam
-            sit amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit sed vulputate mi sit amet
+            This theme helped me to understand better the use of colors and colors in order to improve the user
+            experience. Also, I've learned to structure the site thinking already on the mobile version, so the design
+            adapts better to smaller screens. <br>
+            I would have liked to have more time excercising with animations, I think I could implement them better in
+            the future.
         </p>
     </section>
     <footer>
         This Portfolio is an assignment for Kea School. March 2022
     </footer>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 <script src="./assignment-portfolio.js"></script>
 
 </html>

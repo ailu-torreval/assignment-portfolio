@@ -15,7 +15,10 @@
         <a href="assignment-portfolio.html" class="nav-header">Ailin Torre Val's Portfolio</a>
         <a href="assignment-portfolio.html" class="mob-nav-header">Ailin's Portfolio</a>
         <div class="nav-menu">
-            <p class="nav-assignments"> Assignments <span><i class="fas fa-caret-right"></i> </p>
+            <p class="nav-assignments"> Assignments
+                <span class="arrow-right"><i class="fas fa-caret-right"></i></span>
+                <span class="arrow-down hidden"><i class="fas fa-caret-down"></i></span>
+            </p>
             <ul class="collapsable-menu hidden">
                 <li><a href="./fonts-ui.html">12C.01.01 Fonts and UI cards</a></li>
                 <li><a href="./colors-animations.html">12C.01.02 Colors and animations</a></li>
@@ -62,7 +65,7 @@
         </div>
     </section>
     <section class="assignment-txt">
-        <div class="ass-pic"></div>
+        <div class="ass-pic" id="color-pic"></div>
         <p class="txt">
             In this assignment, we created a color palette to use on a dummy website. I usually only ver neutral color
             palettes with three or four colors only, so for this assignment, I tried to work outside my safe zone, and
@@ -80,6 +83,8 @@
         <p>This Portfolio is an Assignment for Kea School.</p>
     </footer>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 <script src="./assignment-portfolio.js"></script>
 
 </html>
